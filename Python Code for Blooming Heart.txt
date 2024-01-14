@@ -1,0 +1,46 @@
+Python Code for Blooming Heart
+
+import turtle
+import math
+
+def draw_heart():
+    t = turtle.Turtle()
+    t.color('red')
+    t.fillcolor('red')
+    t.begin_fill()
+    t.left(50)
+    t.forward(133)
+    t.circle(50, 200)
+    t.right(140)
+    t.circle(50, 200)
+    t.forward(133)
+    t.end_fill()
+
+def draw_bloom():
+    t = turtle.Turtle()
+    t.color('green')
+    t.fillcolor('green')
+    t.begin_fill()
+    t.circle(30)
+    t.end_fill()
+
+def draw_blooming_heart():
+    turtle.speed(1)
+    turtle.bgcolor('black')
+    
+    for _ in range(3):
+        draw_heart()
+        turtle.left(360/3)
+
+    turtle.left(90)
+    turtle.forward(200)
+
+    for _ in range(12):
+        draw_bloom()
+        turtle.right(360/12)
+
+    turtle.hideturtle()
+    turtle.done()
+
+if __name__ == "__main__":
+    draw_blooming_heart()
