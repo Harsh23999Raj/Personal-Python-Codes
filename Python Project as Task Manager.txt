@@ -1,5 +1,3 @@
-Python Project as Task Manager
-
 import json
 
 class TaskManager:
