@@ -1,5 +1,3 @@
-Python Code for Blooming Heart
-
 import turtle
 import math
 
